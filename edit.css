@@ -1,0 +1,112 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  background-color: rgb(133, 216, 233);
+}
+
+h1, h4 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Profile Image Section */
+.profile img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  margin-left: 15%;
+  margin-right: auto;
+  margin-top: 70px;
+  border: 5px solid #444;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile img:hover {
+  transform: scale(1.1);
+}
+
+/* Personal Information Section */
+.info {
+  text-align: center;
+  margin-top: -400px;
+  margin-left: 100px;
+}
+
+.Info {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.infos p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.infos a {
+  color: #444;
+  text-decoration: none;
+}
+
+.infos a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .profile img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .Info h4 {
+    font-size: 25px;
+  }
+
+  .infos p {
+    font-size: 18px;
+  }
+}
