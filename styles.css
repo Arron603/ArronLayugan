@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 220px;
+    background-color: #0e3d66;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .profile {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .avatar {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    padding: 12px 0;
+    cursor: pointer;
+  }
+  
+  nav li.active {
+    background-color: white;
+    color: black;
+    padding-left: 10px;
+    border-radius: 8px;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 30px;
+  }
+  
+  .form-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .form-box {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 48%;
+  }
+  
+  .form-box input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .form-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .allocation-section {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .allocation-section select,
+  #allocationPercent {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .allocation-section button {
+    padding: 8px 15px;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .data-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .current-allocations,
+  .workload-overview {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  

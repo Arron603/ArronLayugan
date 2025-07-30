@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cosmetic Resource Manager</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="avatar"></div>
+        <div class="info">
+          <h4>Jodel Molano</h4>
+          <p>Graphics Designer</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li>Dashboard</li>
+          <li>Analytics</li>
+          <li>Time Track</li>
+          <li>Cost Track</li>
+          <li class="active">Resources</li>
+          <li>Settings</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <h2 class="main-heading">Cosmetic Project - Resource Allocation</h2>
+
+      <div class="form-section-single">
+        <div class="form-box">
+          <h3>Add New Employee</h3>
+          <input type="text" id="employeeName" placeholder="Employee Name" />
+          <button onclick="addEmployee()">Add Employee</button>
+        </div>
+      </div>
+
+      <div class="allocation-section">
+        <label>Employee</label>
+        <select id="employeeSelect"></select>
+
+        <label>% Allocation</label>
+        <input type="number" id="allocationPercent" placeholder="% Allocation" min="1" max="100" />
+        <button onclick="allocateEmployee()">Allocate</button>
+      </div>
+
+      <div class="data-section">
+        <div class="current-allocations">
+          <h3>Current Allocations</h3>
+          <table>
+            <thead>
+              <tr><th>Project</th><th>Employee</th></tr>
+            </thead>
+            <tbody id="allocationsTable"></tbody>
+          </table>
+        </div>
+
+        <div class="workload-overview">
+          <h3>Employee Workload Overview</h3>
+          <canvas id="workloadChart"></canvas>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
